@@ -1,4 +1,8 @@
-function calcularImpostos() {
+const form = document.getElementById('FormularioNotaFiscal')
+
+form.addEventListener('submit', function (e){
+    e.preventDefault()
+    
     const valorVenda = parseFloat(document.getElementById('valorVenda').value);
     const itens = document.getElementById('itens').value;
     const irpf = parseFloat(document.getElementById('irpf').value) / 100;
@@ -6,15 +10,15 @@ function calcularImpostos() {
     const cofins = parseFloat(document.getElementById('cofins').value) / 100;
     const inss = parseFloat(document.getElementById('inss').value) / 100;
     const issqn = parseFloat(document.getElementById('issqn').value) / 100;
-
+    
     const valorIRPF = valorVenda * irpf;
     const valorPIS = valorVenda * pis;
     const valorCOFINS = valorVenda * cofins;
     const valorINSS = valorVenda * inss;
     const valorISSQN = valorVenda * issqn;
-
+    
     const totalImpostos = valorIRPF + valorPIS + valorCOFINS + valorINSS + valorISSQN;
-
+    
     const notaFiscal = `
         <p>Itens Vendidos: ${itens}</p>
         <p>Valor da Venda: R$${valorVenda.toFixed(2)}</p>
@@ -26,6 +30,6 @@ function calcularImpostos() {
         <p>Total de Impostos: R$${totalImpostos.toFixed(2)}</p>
         <p>Valor Líquido: R$${(valorVenda - totalImpostos).toFixed(2)}</p>
     `;
-
+    
     document.getElementById('notaFiscal').innerHTML = notaFiscal;
-}
+})
