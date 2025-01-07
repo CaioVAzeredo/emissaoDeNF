@@ -27,14 +27,14 @@ span {
 
 button {
     font-family: "Poppins", sans-serif;
-color: white;
-padding: 10px;
-background-color: #041833;
-border: none;
-border-radius: 5px;
-margin: 10px 160px;
-cursor: pointer;
-padding: 10px 25px;
+    color: white;
+    padding: 10px;
+    background-color: #041833;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 200px;
+    cursor: pointer;
+    padding: 10px 25px;
 }
 
 
@@ -71,4 +71,18 @@ input {
     margin: 20px auto;
     border-radius: 10px;
     padding: 20px;
+}
+
+@media screen and (max-width: 756px) {
+
+    #FormularioNotaFiscal,
+    .ContainerNotaFiscal {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+        margin: 25px 0px auto;
+    }
+
 }
