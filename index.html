@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Emissão de Nota Fiscal</title>
+</head>
+
+<body>
+    <!-- Dados de entrada: 
+Valor da Venda, 
+Itens que estão sendo vendidos, 
+Porcentagem do Imposto (IRPF), 
+Porcentagem do Imposto (PIS), 
+Porcentagem do Imposto (COFINS), 
+Porcentagem do Imposto (INSS), 
+Porcentagem do Imposto (ISSQN); -->
+    <form id="FormularioNotaFiscal" >
+
+        <h1>Calculo de Imposto</h1>
+        <label for="valorVenda">Valor da Venda<span>*</span></label>
+        <input type="number" id="valorVenda" required >
+
+        <label for="itens">Itens que estão sendo vendidos<span>*</span></label>
+        <input type="text" id="itens" required>
+
+        <h2>Calculo de impostos (%)</h2>
+        <p>Insira os valores referentes abaixo: </p>
+
+        <label for="irpf">IRPF<span>*</span></label>
+        <input type="number" id="irpf" required>
+
+        <label for="">PIS<span>*</span></label>
+        <input type="number" id="pis" required>
+
+        <label for="">COFINS<span>*</span></label>
+        <input type="number" id="cofins" required>
+
+        <label for="">INSS<span>*</span></label>
+        <input type="number" id="inss" required>
+
+        <label for="">ISSQN<span>*</span></label>
+        <input type="number" id="issqn" required>
+
+        <button type="button" onclick="calcularImpostos()">Calcular </button>
+
+    </form>
+    <section class="ContainerNotaFiscal">
+        <h1>Nota Fiscal</h1>
+        <div id="notaFiscal">
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

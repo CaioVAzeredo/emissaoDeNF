@@ -1,0 +1,74 @@
+html {
+    background-color: #041833;
+}
+
+#FormularioNotaFiscal {
+    background-color: #e0e0e0;
+    width: 500px;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+span {
+    color: red;
+    font-size: 15px;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+color: white;
+padding: 10px;
+background-color: #041833;
+border: none;
+border-radius: 5px;
+margin: 10px 160px;
+cursor: pointer;
+padding: 10px 25px;
+}
+
+
+button:hover {
+    background-color: #0b3975;
+}
+
+form p {
+    color: red;
+    font-family: "Poppins", serif;
+}
+
+label {
+    margin-top: 25px;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+input {
+    background: #ffffff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 0px;
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.ContainerNotaFiscal {
+    background-color: #e0e0e0;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
